@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .parent {
+            background-color: royalblue;
+            padding: 10px;
+        }
+
+        .parent p {
+            color: navajowhite;
+            font-weight: bold;
+        }
+
+        .parent > ul {
+            list-style-type:lower-roman;
+        }
+
+        h2 + p {
+            color: green;
+            font-weight: 600;
+        }
+
+        h2 ~ p {
+            border: 1px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1>Parent Element</h1>
+        <p>This is a paragraph inside the parent element.</p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <h2>Adjacent Sibling Example</h2>
+    <p>This paragraph is an adjacent sibling of the h2 element.</p>
+
+    <h2>General Sibling Example</h2>
+    <p>This paragraph is a general sibling of the h2 element.</p>
+    <p>Another paragraph that is also a general sibling.</p>
+</body>
+</html>

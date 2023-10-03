@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* utility classes */
+.flex {
+    display: flex;
+}
+
+/* main */
+.main {
+    width: 100%;
+    height: 100svh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* wrapper */
+.wrapper {
+    padding: 4rem 3rem;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    border: 1px solid #E1E3E6;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* header */
+.logo img {
+    width: 85px;
+    padding-block: .5rem;
+}
+
+.header {
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.header h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
+}
+
+/* input box */
+.input-box {
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    gap: .7rem;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    padding: .8rem 1.2rem;
+    font-size: 1.2rem;
+    color: #555;
+    border: 2px solid #555;
+}
+
+.input-box::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "Email or phone";
+    padding: 0 .5rem;
+    transform: translate(10px, -10px);
+    background-color: #fff;
+    color: #1A73E8;
+    font-weight: 600;
+    position: absolute;
+}
+
+.input-box input:focus {
+    outline: none;
+    border: 2px solid blue;
+}
+
+.input-box input:focus .input-box::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "Email or phone";
+    padding: 0 .5rem;
+    transform: translate(10px, -10px);
+    background-color: #fff;
+    color: #1A73E8;
+    font-weight: 600;
+    position: absolute;
+}
+.input-box a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1A73E8;
+}
+
+/* learn more */
+.Learn-more {
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    gap: .2rem;
+    padding-block: 1rem;
+}
+
+.Learn-more a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1A73E8;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1A73E8;
+}
+
+.footer button {
+    outline: none;
+    border: none;
+    padding: .75rem 1.5rem;
+    background-color: #1A73E8;
+    color: #fff;
+}

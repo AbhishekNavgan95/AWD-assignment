@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .wrapper {
+            height: 100svh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        p {
+            color: blue;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        #special {
+            text-transform: uppercase;
+        }
+
+        ul li {
+            list-style-type:lower-greek;
+        }
+
+        a[target="_blank"] {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <p>This is a paragraph with a <a href="#" target="_blank">link</a>.</p>
+        <p class="highlight">This is another paragraph with a class applied.</p>
+        <p id="special">This is a special paragraph with an ID applied.</p>
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ul>
+    </div>
+</body>
+</html>

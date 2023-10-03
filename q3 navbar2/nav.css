@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navigation {
+    width: 100%;
+    background-color: #A52A2A;
+    display: flex;
+    align-items: center;
+}
+
+.navigation a {
+    color: #fff;
+    padding: 1rem 1rem;
+}
+
+.home {
+    background-color: #04AA6D;
+}
+
+.navigation a:hover {
+    background-color: #111111;
+}
