@@ -2,35 +2,39 @@
 <html>
 <head>
     <style>
-        .parent {
+        /* Style for the parent element */
+        .container {
+            margin: 20px;
+        }
+
+        /* Style for the descendant elements */
+        .container span {
+            color: blue;
+        }
+
+        /* Style for the direct child elements */
+        .container > ul {
             background-color: royalblue;
             padding: 10px;
         }
 
-        .parent p {
-            color: navajowhite;
+        /* Style for adjacent sibling elements */
+        h3 + p {
             font-weight: bold;
         }
 
-        .parent > ul {
-            list-style-type:lower-roman;
-        }
-
-        h2 + p {
-            color: green;
-            font-weight: 600;
-        }
-
-        h2 ~ p {
+        /* Style for general sibling elements */
+        h3 ~ p {
             border: 1px solid red;
             padding: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="parent">
-        <h1>Parent Element</h1>
-        <p>This is a paragraph inside the parent element.</p>
+    <div class="container">
+        <h2>Container Example</h2>
+        <p>This is a paragraph inside the container.</p>
+        <span>This is a span inside the container.</span>
         <ul>
             <li>Item 1</li>
             <li>Item 2</li>
@@ -38,11 +42,11 @@
         </ul>
     </div>
 
-    <h2>Adjacent Sibling Example</h2>
-    <p>This paragraph is an adjacent sibling of the h2 element.</p>
+    <h3>Adjacent Sibling Example</h3>
+    <p>This paragraph is an adjacent sibling of the h3 element.</p>
 
-    <h2>General Sibling Example</h2>
-    <p>This paragraph is a general sibling of the h2 element.</p>
+    <h3>General Sibling Example</h3>
+    <p>This paragraph is a general sibling of the h3 element.</p>
     <p>Another paragraph that is also a general sibling.</p>
 </body>
 </html>
